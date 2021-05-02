@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F1C40F"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeamMembersActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team Leader"
+            android:textColor="#000"
+            android:textSize="50dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:id="@+id/team_leadertxt"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/leader_img"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/shri"
+            android:layout_below="@id/team_leadertxt"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/leader_img"
+                android:text="Shriniwas Pawar"
+                android:textColor="#000"
+                android:textSize="40dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:id="@+id/leader_name"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/leader_name"
+                android:layout_marginTop="50dp"
+                android:text="Team Member"
+                android:textColor="#000"
+                android:textSize="50dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:id="@+id/team_membertxt"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/memberimg"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/mahi"
+                android:layout_below="@id/team_membertxt"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/memberimg"
+                android:text="Mahesh Wattamwar"
+                android:textColor="#000"
+                android:textSize="40dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
